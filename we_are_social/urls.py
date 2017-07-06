@@ -20,6 +20,7 @@ from paypal_store import views as paypal_views
 from accounts import  views as accounts_views
 from hello import views as hello_views
 from products import views as product_views
+from magazines import views as magazine_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -34,4 +35,5 @@ urlpatterns = [
     url(r'^paypal-return', paypal_views.paypal_return),
     url(r'^paypal-cancel', paypal_views.paypal_cancel),
     url(r'^products/$', product_views.all_products),
+    url(r'^magazines/$', magazine_views.all_magazines),
 ]

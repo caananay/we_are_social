@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
+import uuid
 from django.db import models
 from django.conf import settings
 from paypal.standard.forms import PayPalPaymentsForm
@@ -18,7 +18,7 @@ class Product(models.Model):
             "amount":self.price,
             "currency":"USD",
             "item_name":self.name,
-            "invoice":"%s-%s" (self.pk, uuid.uuid4()),
+            "invoice":"%s-%s" % (self.pk, uuid.uuid4()),
             "notify_url":settings.PAYPAL_NOTIFY_URL,
             "return_url":"%s/paypal-return" % settings.SITE_URL,
             "cancel_return":"%s/paypal-cancel" % settings.SITE_URL
