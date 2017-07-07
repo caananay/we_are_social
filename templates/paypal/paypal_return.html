@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Your payment of {{ product.price }} was successfully paid to {{ settings.PAYPAL_RECEIVER_EMAIL }}</h1>
+    <h1>Your payment of {{ post.payment_status }} was successfully paid to {{ post.PAYPAL_RECEIVER_EMAIL }}</h1>
 
     <h2>POST</h2>
     {{ post }}

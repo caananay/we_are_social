@@ -25,7 +25,7 @@ SECRET_KEY = 'm#uo%yjc4r6v!7#%*d49u(z)eeem2u$!fyvbw(ab0rkh^-_#$x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'http://d4df62cb.ngrok.io']
 
 AUTH_USER_MODEL = 'accounts.User'
 
@@ -145,5 +145,5 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_hjx1XiGxWexYlRtisHu1Z0dM')
 
 #PayPal Settings
 SITE_URL='http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = 'http://127.0.0.1/the-children-of-the-world-eti-phil/'
+PAYPAL_NOTIFY_URL = 'http://d4df62cb.ngrok.io/the-children-of-the-world-eti-phil/'
 PAYPAL_RECEIVER_EMAIL ='doncanny-facilitator@yahoo.com'
