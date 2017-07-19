@@ -21,3 +21,14 @@ def started_time(created_at):
 def last_posted_user_name(thread):
     posts = thread.posts.all().order_by('created_at')
     return posts.first().user.username
+
+@register.filter
+def vote_percentage(subject):
+    count = subject.votes.count()
+
+    if count == 0:
+        return 0
+
+    total_votes = subject.poll.votes.count()
+
+    return (100/total_votes)*count

@@ -1,0 +1,42 @@
+[
+{
+    "model": "accounts.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$fVYMXoH9VT1e$gi4f+Jy0LWMkPBQ5lUPXaK5aFWh/LPiP2lJ89WxwVnw=",
+        "last_login": "2017-07-06T19:01:44.944Z",
+        "is_superuser": false,
+        "username": "adminus@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "adminus@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-06-29T16:06:22.619Z",
+        "stripe_id": "",
+        "subscription_end": "2017-07-02T20:45:38.863Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$0gtqQgSz95g8$0boOmtMZHbiv5SZ2L111furhr8+HWHP1b0Xu4I4GmeM=",
+        "last_login": "2017-07-14T12:07:23.993Z",
+        "is_superuser": true,
+        "username": "doncanny@yahoo.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "doncanny@yahoo.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-07-04T20:36:16.480Z",
+        "stripe_id": "",
+        "subscription_end": "2017-07-04T20:36:16.480Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
