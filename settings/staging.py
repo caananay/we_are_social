@@ -14,6 +14,6 @@ STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_rGZJw1qEwDxms3NDLa
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_hjx1XiGxWexYlRtisHu1Z0dM')
 
 #PayPal Settings
-SITE_URL='http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = 'http://d4df62cb.ngrok.io/the-children-of-the-world-eti-phil/'
+SITE_URL= 'https://pure-spire-93905.herokuapp.com/'
+PAYPAL_NOTIFY_URL = 'https://pure-spire-93905.herokuapp.com/'
 PAYPAL_RECEIVER_EMAIL ='doncanny-facilitator@yahoo.com'
