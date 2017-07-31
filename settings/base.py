@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: Enter your own SECRET_KEY here
 SECRET_KEY = 'm#uo%yjc4r6v!7#%*d49u(z)eeem2u$!fyvbw(ab0rkh^-_#$x'
 
-ALLOWED_HOSTS = ['127.0.0.1', 'https://pure-spire-93905.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'pure-spire-93905.herokuapp.com']
 SITE_ID = 3
 
 # Application definition
