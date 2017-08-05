@@ -1,0 +1,333 @@
+[
+{
+    "model": "sessions.session",
+    "pk": "g5cyqxhotumpjd8ov824jvnv5ibmq3yc",
+    "fields": {
+        "session_data": "MjRlNzVjZTg1ODY1YWRjNmI2YTA4Y2I0MmEzNGMzNDUxZjkzZjQ3Zjp7Il9hdXRoX3VzZXJfaGFzaCI6IjRiMmNiYjY1ZjRjM2Q5NGU0ZDFkMDUyZTg5ODBmMzBjMDJiYWY4MWQiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiNiJ9",
+        "expire_date": "2017-07-28T12:07:24.256Z"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 3,
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+},
+{
+    "model": "flatpages.flatpage",
+    "pk": 1,
+    "fields": {
+        "url": "/about/",
+        "title": "About Us",
+        "content": "A fundamental trade-off in dynamic Web sites is, well, they\u2019re dynamic. Each time a user requests a page, the Web server makes all sorts of calculations, from database queries to template rendering to business logic to creating the page that your site\u2019s visitors see. This is a lot more expensive, from a processing-overhead perspective, than your standard read-a-file-off-the-filesystem server arrangement.\r\n\r\nFor most Web applications, this overhead isn\u2019t a big deal. Most Web applications aren\u2019t washingtonpost.com or slashdot.org; they\u2019re simply small- to medium-sized sites with so-so traffic.\r\nBut for medium- to high-traffic sites, it\u2019s essential to cut as much overhead as possible.",
+        "enable_comments": false,
+        "template_name": "",
+        "registration_required": false,
+        "sites": [
+            [
+                "example.com"
+            ]
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$fVYMXoH9VT1e$gi4f+Jy0LWMkPBQ5lUPXaK5aFWh/LPiP2lJ89WxwVnw=",
+        "last_login": "2017-07-06T19:01:44.944Z",
+        "is_superuser": false,
+        "username": "adminus@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "adminus@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-06-29T16:06:22.619Z",
+        "stripe_id": "",
+        "subscription_end": "2017-07-02T20:45:38.863Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$0gtqQgSz95g8$0boOmtMZHbiv5SZ2L111furhr8+HWHP1b0Xu4I4GmeM=",
+        "last_login": "2017-07-14T12:07:23.993Z",
+        "is_superuser": true,
+        "username": "doncanny@yahoo.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "doncanny@yahoo.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-07-04T20:36:16.480Z",
+        "stripe_id": "",
+        "subscription_end": "2017-07-04T20:36:16.480Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "name": "Smoothie Xpress",
+        "description": "the best smoothie machine ever",
+        "price": "20.00"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "name": "Step Trainer",
+        "description": "work those abs the perfect way",
+        "price": "15.50"
+    }
+},
+{
+    "model": "magazines.magazine",
+    "pk": 1,
+    "fields": {
+        "name": "Hello",
+        "description": "for all the latest gossip news",
+        "price": "3.50"
+    }
+},
+{
+    "model": "magazines.magazine",
+    "pk": 2,
+    "fields": {
+        "name": "Trendy",
+        "description": "for all the latest trends",
+        "price": "2.50"
+    }
+},
+{
+    "model": "threads.subject",
+    "pk": 1,
+    "fields": {
+        "name": "General Topic",
+        "description": "<p>General topics from around the world</p>"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 1,
+    "fields": {
+        "name": "testing 123",
+        "user": [
+            "doncanny@yahoo.com"
+        ],
+        "subject": 1,
+        "created_at": "2017-07-11T18:28:21Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 2,
+    "fields": {
+        "name": "The Bluebeards Revenge",
+        "user": [
+            "doncanny@yahoo.com"
+        ],
+        "subject": 1,
+        "created_at": "2017-07-12T20:06:48.825Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 1,
+    "fields": {
+        "thread": 2,
+        "comment": "<p>interesting read, if you like that sort of thing. still can not see the delete button</p>",
+        "user": [
+            "doncanny@yahoo.com"
+        ],
+        "created_at": "2017-07-12T20:06:48.825Z"
+    }
+},
+{
+    "model": "reusable_blog.post",
+    "pk": 1,
+    "fields": {
+        "author": [
+            "doncanny@yahoo.com"
+        ],
+        "title": "test1",
+        "content": "Notice in the code above that we refer to yet another view called thread.  We\u2019ll put that in place in a little while.\r\n\r\nEven without the thread view in place, our code will still throw an exception when run. This is because we don\u2019t have the thread_extras templatetags file in place yet. Why do we need this again? If you look back at our forum.html template, you\u2019ll see a reference to a custom template tag called get_total_subject_posts.\r\n\r\n31\r\n32\r\n                   <td>{{ subject.threads.co",
+        "created_date": "2017-07-11T18:11:41Z",
+        "published_date": "2017-07-11T18:20:32Z",
+        "views": 2,
+        "tag": null,
+        "image": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2017-07-05T18:39:08.967Z",
+        "user": [
+            "doncanny@yahoo.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "1",
+        "object_repr": "/about/ -- About Us",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2017-07-05T18:40:44.902Z",
+        "user": [
+            "doncanny@yahoo.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Smoothie Xpress",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2017-07-05T18:41:12.889Z",
+        "user": [
+            "doncanny@yahoo.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "Step Trainer",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2017-07-06T19:00:44.213Z",
+        "user": [
+            "doncanny@yahoo.com"
+        ],
+        "content_type": [
+            "magazines",
+            "magazine"
+        ],
+        "object_id": "1",
+        "object_repr": "Hello",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2017-07-06T19:01:11.087Z",
+        "user": [
+            "doncanny@yahoo.com"
+        ],
+        "content_type": [
+            "magazines",
+            "magazine"
+        ],
+        "object_id": "2",
+        "object_repr": "Trendy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2017-07-11T18:12:16.816Z",
+        "user": [
+            "doncanny@yahoo.com"
+        ],
+        "content_type": [
+            "reusable_blog",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "test1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2017-07-11T18:13:09.084Z",
+        "user": [
+            "doncanny@yahoo.com"
+        ],
+        "content_type": [
+            "threads",
+            "subject"
+        ],
+        "object_id": "1",
+        "object_repr": "General Topic",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2017-07-11T18:20:35.830Z",
+        "user": [
+            "doncanny@yahoo.com"
+        ],
+        "content_type": [
+            "reusable_blog",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "test1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"published_date\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2017-07-11T18:28:42.343Z",
+        "user": [
+            "doncanny@yahoo.com"
+        ],
+        "content_type": [
+            "threads",
+            "thread"
+        ],
+        "object_id": "1",
+        "object_repr": "Thread object",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
