@@ -2,6 +2,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+print BASE_DIR
 
 # SECURITY WARNING: Enter your own SECRET_KEY here
 SECRET_KEY = 'm#uo%yjc4r6v!7#%*d49u(z)eeem2u$!fyvbw(ab0rkh^-_#$x'
