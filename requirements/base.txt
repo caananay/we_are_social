@@ -15,7 +15,7 @@ pytz==2017.2
 requests==2.18.1
 six==1.10.0
 stripe==1.62.0
-urllib3==1.21.1
+urllib3==1.26.5
 git+https://github.com/caananay/blog-app-plugin.git
 beautifulsoup4==4.6.0
 django-emoticons==1.2
